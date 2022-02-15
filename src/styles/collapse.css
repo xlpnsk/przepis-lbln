@@ -1,0 +1,140 @@
+.prices-container:first-of-type::before{
+    content: ' ';
+    display: inline-block;
+    /* width: 100%; */
+    width: 1410px;
+    max-width: 1410px;
+    border-top: 2px solid #dee2e6;
+}
+
+.collapse-container{
+    border-bottom: 2px solid #dee2e6;
+    max-width: 1410px;margin: auto;
+    position: relative;
+}
+.collapse-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.collapse-table thead th{
+    color: #fff;
+    background-color: #86bc25;
+    padding: 22px 11px;
+    vertical-align: middle;
+}
+
+.collapse-table thead th:first-of-type{
+    max-width: 260px;
+    text-align: left;
+
+}
+
+.collapse-table{
+    margin: auto;
+}
+
+tr td:first-of-type{
+    max-width: 260px;
+    text-align: left;
+}
+
+.collapse-table td, .collapse-table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-collapse thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.collapse-table td, .collapse-table th {
+    padding: 11px;
+    vertical-align: middle;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    font-weight: 300;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.round-btn{
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 2px solid #86bc25;
+    color: #86bc25;
+    font-size: 15px;
+    font-family: Kulturista,sans-serif;
+    text-transform: uppercase;
+    border-radius: 50%;
+    transition: all .15s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.round-btn:hover{
+    background: #86bc25;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-active{
+    background: #86bc25;
+    color: #fff;
+}
+
+.main-title{
+    transition: color 300ms ease;
+    font-family: 'Kulturista';
+    font-weight: bold;
+}
+
+.title-active{
+    color: #86bc25;
+}
+
+.collapse{
+    padding: 20px 0;
+}
+
+/* .collapse-enter {
+    max-height: 0;
+  }
+  .collapse-enter-active {
+    max-height:1000px;
+    transition: max-height 1s ease;
+  }
+  .collapse-exit {
+    
+  }
+  .collapse-exit-active {
+    max-height: 0;
+    transition: max-height 1s ease;
+  } */
+
+  /* .collapse-enter {
+      z-index: -1;
+    transform: translateY(30%);
+  }
+  .collapse-enter-active {
+    transform: translateY(0);
+    transition: all 300ms ease;
+  }
+  .collapse-exit {
+    transform: translateY(0);
+  }
+  .collapse-exit-active {
+    transform: translateY(-100%);
+    transition: all 1s ease;
+  } */

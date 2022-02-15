@@ -1,0 +1,50 @@
+.form-section::before{
+    content: ' ';
+    display: inline-block;
+    width: 100%;
+
+    max-width: 1410px;
+    border-top: 2px solid #dee2e6;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.containt-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.containt-info p{
+    margin: 0;
+    line-height: 1.5;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input,textarea{
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    font-weight: 300;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-group{
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 48px;
+    margin-bottom: 10px;
+}

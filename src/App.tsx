@@ -4,6 +4,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import AboutUs from './components/AboutUs';
 import Offer from './components/Offer';
+import Prices from './components/Prices';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -11,6 +13,9 @@ function App() {
       <NavBar/>
       <AboutUs/>
       <Offer/>
+      <Prices/>
+      {/* <section style={{height: '500px'}}></section> */}
+      <ContactForm/>
     </div>
   );
 }

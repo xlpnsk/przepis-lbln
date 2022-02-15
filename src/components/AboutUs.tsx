@@ -77,7 +77,7 @@ const AboutUs: FunctionComponent<Props> = () => {
     return ( 
         <section className=" section about-us-container">
             <article className="about-us-inner">
-            <h2 className="about-title">
+            <h2 className="about-title text-center">
                 KILKA SŁÓW O NAS
             </h2>
             <div className="slider">
