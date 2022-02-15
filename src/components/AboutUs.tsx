@@ -56,11 +56,35 @@ const slideData:AboutUs[] = [{
     img: PrzepisONas6,
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non excepturi ex ut illum sunt. At dolorem officiis sint tempore, accusamus obcaecati eius maiores? Expedita quis nam aperiam unde, sapiente ducimus!",
     title: 'Jan Nowak 6'
-}] 
+}];
+
+function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "#86bc25", width: '33px', height: '33px'  }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "#86bc25", width: '33px', height: '33px' }}
+        onClick={onClick}
+      />
+    );
+  }
+
+
 
 const AboutUs: FunctionComponent<Props> = () => {
 
-    const [data, setData]=useState(slideData)
+    const [data, setData]=useState(slideData);
 
     const settings = {
         dots: true,
@@ -68,10 +92,12 @@ const AboutUs: FunctionComponent<Props> = () => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: "50px",
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
+        prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />
       };
 
     return ( 

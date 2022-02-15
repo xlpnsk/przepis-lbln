@@ -13,7 +13,7 @@ interface Props {
  
 const CollapseItem: FunctionComponent<Props> = ({prop, open, setOpen, id}) => {
     
-    const [menuHeight, setMenuHeight] = useState<null | number>(null);
+    const [menuHeight, setMenuHeight] = useState<number>(0);
     const dropdownRef = useRef(null); 
 
     function calcHeight(el:HTMLElement) {
@@ -36,12 +36,12 @@ const CollapseItem: FunctionComponent<Props> = ({prop, open, setOpen, id}) => {
             <div className={`main-title${open[id]?' title-active':''}`}>{prop.title}</div>
             <span className={`round-btn${open[id]?' btn-active':''}`} onClick={() => clickHandler()}>{open[id]? '-' : '+'}</span>
         </div>
+        <div className="collapse-outer-container" style={open[id]?{ height: menuHeight }:{ height: 0 }}>
         <CSSTransition 
             in={open[id]} 
-            timeout={200} 
+            timeout={150} 
             classNames="collapse" 
             unmountOnExit 
-            style={{ height: menuHeight }} 
             ref={dropdownRef} 
             onEnter={calcHeight}
         >
@@ -63,6 +63,7 @@ const CollapseItem: FunctionComponent<Props> = ({prop, open, setOpen, id}) => {
             </table>
         </div>
         </CSSTransition>   
+        </div>
         </div>
      );
 }

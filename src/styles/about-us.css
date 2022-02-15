@@ -36,3 +36,17 @@
     background: url('../assets/background.png') no-repeat center;
     background-size: cover;
 }
+
+
+
+.slick-prev {
+    top: 35% !important;
+    left: 10% !important;
+    z-index: 1;
+
+  }
+  .slick-next {
+    top: 35% !important;
+    right: 10% !important;
+    z-index: 1;
+  }

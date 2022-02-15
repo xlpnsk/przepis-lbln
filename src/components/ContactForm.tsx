@@ -15,8 +15,7 @@ const ContactForm: FunctionComponent<Props> = () => {
                     <input type="text" placeholder="Telefon"/>
                     <input type="text" placeholder="E-mail"/>
                     <textarea placeholder="Wiadomość"/>
-                    <input type="checkbox" id='policy'/>
-                    <label htmlFor="policy">policy</label>
+                    <label htmlFor="policy"><input type="checkbox" id='policy'/>policy</label>                    
                     <div className="btn-group">
                         <button type='submit' className="btn">WYŚLIJ</button>
                     </div>
