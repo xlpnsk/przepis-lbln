@@ -6,10 +6,12 @@ import AboutUs from './components/AboutUs';
 import Offer from './components/Offer';
 import Prices from './components/Prices';
 import ContactForm from './components/ContactForm';
+import ScrollNav from './components/ScrollNav';
 
 function App() {
   return (
     <div className="App">
+      <ScrollNav/>
       <NavBar/>
       <AboutUs/>
       <Offer/>

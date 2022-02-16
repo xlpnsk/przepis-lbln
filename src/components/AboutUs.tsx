@@ -8,6 +8,10 @@ import PrzepisONas6 from '../assets/onas_foto/Przepis_onas_6.png';
 import SliderItem from "./SliderItem";
 import '../styles/about-us.css'
 import Slider from "react-slick";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import Group6 from '../assets/Group 51.svg';
+import Group7 from '../assets/Group 50.svg';
+// import "animate.css/animate.min.css";
 // import "~slick-carousel/slick/slick.css"; 
 // import "~slick-carousel/slick/slick-theme.css";
 interface Props {
@@ -102,6 +106,22 @@ const AboutUs: FunctionComponent<Props> = () => {
 
     return ( 
         <section className=" section about-us-container">
+           <div className="background-icons">
+           <div className="anim-6">
+           <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+                <img src={Group6} alt="gr6" />
+
+            </AnimationOnScroll>
+            </div>
+            <div className="anim-7">
+            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+              <img src={Group7} alt="gr7" />
+
+          </AnimationOnScroll>
+            </div>
+            </div>
             <article className="about-us-inner">
             <h2 className="about-title text-center">
                 KILKA SŁÓW O NAS

@@ -1,9 +1,9 @@
 import { FunctionComponent } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Logo from '../assets/logo.svg';
-import InstaIcon from '../assets/insta_icon.svg' 
-import FbIcon from '../assets/facebook_icon.svg' 
-import ShoppingIcon from '../assets/shopping.svg' 
+
 import '../styles/nav.css'
+import MainNav from "./MainNav";
 interface Props {
     
 }
@@ -11,7 +11,7 @@ interface Props {
 const NavBar: FunctionComponent<Props> = () => {
     return (
         <section className="main-container"> 
-            <article className="main-nav container">
+            {/* <article className="main-nav container">
             <nav className="nav-bar-expanded">
                 <a href="#" className="nav-link">START</a>
                 <a href="#" className="nav-link">O NAS</a>
@@ -33,8 +33,12 @@ const NavBar: FunctionComponent<Props> = () => {
 
                 </ul>
             </div>
-            </article>
+            </article> */}
+            <MainNav>
+            <img src={Logo} alt="logo"/>
+            </MainNav>
         <div className="main-header">
+            <AnimationOnScroll duration={1.3} animateIn="animate__fadeInDown" animateOnce={true}>
             <div className="title">
                 ZDROWE POSIŁKI 
                 <br />
@@ -42,6 +46,7 @@ const NavBar: FunctionComponent<Props> = () => {
             </div>
             <p className="subtitle">Przepis jest firmą cateringową, która zrodziła się z pasji do gotowania, smaku i zdrowego jedzenia.</p>
             <a className="btn">ZOBACZ OFERTĘ</a>
+            </AnimationOnScroll>
         </div>    
         </section>
      );

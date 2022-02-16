@@ -3,6 +3,11 @@
   src: url(./assets/font/Kulturista\ Medium.otf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/font/Roboto-Regular.ttf);
+}
+
 body {
   margin: 0;
     color: #000;
@@ -92,3 +97,16 @@ h2{
     margin-right: auto;
     margin-left: auto;
 } */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #86bc25;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}

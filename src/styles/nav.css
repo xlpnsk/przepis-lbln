@@ -49,6 +49,14 @@
     flex-direction: row;
     margin: 0
   }
+
+  .nav-icons li{
+    height: 41px;
+  }
+
+  .nav-icons li a{
+    height: fit-content;
+  }
   
   .main-header{
     display: flex;

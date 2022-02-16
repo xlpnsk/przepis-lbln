@@ -127,6 +127,6 @@ table {
     transform: translateY(0);
   }
   .collapse-exit-active {
-    transform: translateY(100%);
+    transform: translateY(70%);
     transition: all 300ms ease;
   }
