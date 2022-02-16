@@ -41,11 +41,13 @@ const ContactForm: FunctionComponent<Props> = () => {
                     <input className="input" type="text" placeholder="Telefon"/>
                     <input className="input" type="text" placeholder="E-mail"/>
                     <textarea className="input" placeholder="Wiadomość" rows={5}/>
+                    <div className="textarea-container">
                     <label className="custom-label" htmlFor="policy"><input className="input" type="checkbox" id='policy'/>
                         Zgodnie z art. 13 ust. 1 ogólnego rozporządzenia o ochronie danych 
                         osobowych z dnia 27 kwietnia 2016 r., informujemy, iż administratorem 
                         Pani/Pana danych osobowych jest "Przepis" Agnieszka Ziajko-Jankowska.
-                    </label>                    
+                    </label>   
+                    </div>                 
                     <button type='submit' className="btn btn-submit">WYŚLIJ</button>
                 </form>
                 <div className="containt-info">
@@ -57,10 +59,10 @@ const ContactForm: FunctionComponent<Props> = () => {
                 <p>91 1140 2004 0000 3102 7592 9532 </p>
                 <br />
                 <p>+48 662 050 683 </p>
-                <p>info@przepis.lublin.pl</p>
+                <p><a>info@przepis.lublin.pl</a></p>
                 <div className="btn-container">
-                    <button>a</button>
-                    <button>a</button>
+                    <a>a</a>
+                    <a>a</a>
                 </div>
                 </div>
             </div>

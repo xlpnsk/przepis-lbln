@@ -22,3 +22,16 @@
 .navbar-fixed ul{
     list-style: none;
 }
+
+@media screen and (max-width: 993px) { /*mobile*/
+    .navbar-fixed{
+        top: 0 !important;
+    }
+    .main-container{
+        margin-top: 75px;
+    }
+    .main-nav{
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+}
