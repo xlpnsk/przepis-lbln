@@ -25,8 +25,8 @@ const MainNav: FunctionComponent<MainNavProps> = ({children}) => {
             <div className="nav-icons">
                 <ul>
                     <li> <button className="btn">ZAMÓW DIETĘ</button></li>
-                    <li> <a href="#"><img src={InstaIcon} alt="insta logo"></img></a></li>
-                    <li> <a href="#"><img src={FbIcon} alt="facebook logo"></img></a></li>                   
+                    <li> <a href="#"><img src={FbIcon} alt="facebook logo"></img></a></li> 
+                    <li> <a href="#"><img src={InstaIcon} alt="insta logo"></img></a></li>                                    
                     <li> <a href="#"><img src={ShoppingIcon} alt="facebook logo"></img></a></li>                   
 
                 </ul>

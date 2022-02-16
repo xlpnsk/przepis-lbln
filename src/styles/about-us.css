@@ -9,7 +9,7 @@
     
 }
 .slider-item{
-    width: 930px; /**/
+    max-width: 930px; /**/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,14 +61,122 @@
     width: 100%;
 }
 
+.anim-1{
+    position: absolute;
+    top: -100px;
+    left: 55%;
+}
+.anim-2{
+    position: absolute;
+    top: 120px;
+    left: 43%;
+}
+.anim-3{
+    position: absolute;
+    top: 290px;
+    left: 31%;
+}
+.anim-4{
+    position: absolute;
+    top: 530px;
+    left: 26%;
+}
+.anim-5{
+    position: absolute;
+    top: 700px;
+    left: 31%;
+}
 .anim-6{
     position: absolute;
-    top: 580px;
-    left: 55%;
+    top: 550px;
+    left: 54%;
 }
 .anim-7{
     position: absolute;
-    transform: scale(1.3);
-    top: 550px;
-    right: 13%;
+    top: 520px;
+    right: 22%;
+}
+
+.anim-8{
+    position: absolute;
+    bottom: -100px;
+    right: 31%;
+}
+
+.anim-9{
+    position: absolute;
+    bottom: 380px;
+    right: 20%;
+}
+
+.btn-slick-next{
+    font-family: inherit;
+    color: #86bc25;
+    opacity: 1;
+    font-size: 30px;
+    position: absolute;
+    top: 400px;
+    right: 190px;
+}
+
+.btn-slick-next::before{
+    content: '›';
+}
+
+
+.btn-slick-prev{
+    font-family: inherit;
+    color: #86bc25;
+    opacity: 1;
+    font-size: 30px;
+    position: absolute;
+    top: 400px;
+    left: 190px;
+}
+
+.btn-slick-prev::before{
+    content: '‹';
+}
+
+.slide-round-btn{
+    width: 33px;
+    height: 33px;
+    background: #fff;
+    border: 2px solid #86bc25;
+    color: #86bc25;
+    font-size: 15px;
+    font-family: Kulturista,sans-serif;
+    text-transform: uppercase;
+    border-radius: 50%;
+    transition: all .15s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 300;
+    z-index: 2;
+}
+
+.slide-round-btn:hover{
+    background: #86bc25;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slider-title{
+    color:#86bc25;
+    text-transform: uppercase;
+    font-family: 'Kulturista';
+}
+
+/* .dots{
+    list-style: none;
+    background-color: #86bc25;
+} */
+
+
+@media screen and (max-width: 769px) {
+    .slide-round-btn{
+        display: none;
+    }
 }

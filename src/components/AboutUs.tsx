@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useRef, useState } from "react";
 import PrzepisONas1 from '../assets/onas_foto/Przepis_onas_1.png';
 import PrzepisONas2 from '../assets/onas_foto/Przepis_onas_2.png';
 import PrzepisONas3 from '../assets/onas_foto/Przepis_onas_3.png';
@@ -9,11 +9,16 @@ import SliderItem from "./SliderItem";
 import '../styles/about-us.css'
 import Slider from "react-slick";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import Group6 from '../assets/Group 51.svg';
-import Group7 from '../assets/Group 50.svg';
-// import "animate.css/animate.min.css";
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
+import Anim1 from '../assets/anim/anim1.png';
+import Anim2 from '../assets/anim/anim2.png';
+import Anim3 from '../assets/anim/anim3.png';
+import Anim4 from '../assets/anim/anim4.png';
+import Anim5 from '../assets/anim/anim5.png';
+import Anim6 from '../assets/anim/anim6.png';
+import Anim7 from '../assets/anim/anim7.png';
+import Anim8 from '../assets/anim/anim8.png';
+import Anim9 from '../assets/anim/anim9.png';
+import Arrow from '../assets/arrow.svg';
 interface Props {
     
 }
@@ -62,62 +67,113 @@ const slideData:AboutUs[] = [{
     title: 'Jan Nowak 6'
 }];
 
-function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "#86bc25", width: '33px', height: '33px'  }}
-        onClick={onClick}
-      />
-    );
-  }
   
-  function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "#86bc25", width: '33px', height: '33px' }}
-        onClick={onClick}
-      />
-    );
-  }
-
 
 
 const AboutUs: FunctionComponent<Props> = () => {
 
     const [data, setData]=useState(slideData);
 
+    const sliderRef = useRef<Slider>(null);
+
     const settings = {
         dots: true,
-        arrows: true,
+        arrows: false,
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "50px",
+        centerPadding: "0px",
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
-        prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />
+        // dotsClass: 'dots'
       };
+
+      function ArrNext() {
+        return (
+          <span className="btn-slick-next slide-round-btn" 
+          onClick={() => {
+            if(sliderRef.current !== null) {
+              sliderRef.current.slickNext()}}}
+          >        
+          </span>
+        )
+      }
+
+      function ArrPrev() {
+        return (
+          <button className="btn-slick-prev slide-round-btn" 
+          onClick={() => {
+            if(sliderRef.current !== null) {
+              sliderRef.current.slickPrev()}}}
+          >        
+          </button>
+        )
+      }
 
     return ( 
         <section className=" section about-us-container">
            <div className="background-icons">
+           <div className="anim-1">
+           <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+                <img src={Anim1} alt="icon1" />
+
+            </AnimationOnScroll>
+            </div>
+           <div className="anim-2">
+           <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+                <img src={Anim2} alt="gr6" />
+
+            </AnimationOnScroll>
+            </div>
+           <div className="anim-3">
+           <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+                <img src={Anim3} alt="gr6" />
+
+            </AnimationOnScroll>
+            </div>
+           <div className="anim-4">
+           <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+                <img src={Anim4} alt="gr6" />
+
+            </AnimationOnScroll>
+            </div>
+           <div className="anim-5">
+           <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+                <img src={Anim5} alt="gr6" />
+
+            </AnimationOnScroll>
+            </div>
            <div className="anim-6">
            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-                <img src={Group6} alt="gr6" />
+                <img src={Anim6} alt="gr6" />
 
             </AnimationOnScroll>
             </div>
             <div className="anim-7">
             <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-              <img src={Group7} alt="gr7" />
+              <img src={Anim7} alt="gr7" />
+
+          </AnimationOnScroll>
+            </div>
+            <div className="anim-8">
+            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+              <img src={Anim8} alt="gr8" />
+
+          </AnimationOnScroll>
+            </div>
+            <div className="anim-9">
+            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+              
+              <img src={Anim9} alt="gr9" />
 
           </AnimationOnScroll>
             </div>
@@ -125,12 +181,13 @@ const AboutUs: FunctionComponent<Props> = () => {
             <article className="about-us-inner">
             <h2 className="about-title text-center">
                 KILKA SŁÓW <br /> O NAS
+
+                <ArrPrev/><ArrNext/>            
             </h2>
             <div className="slider">
                 <div className="slider-items">
-                    <Slider {...settings}>
+                    <Slider ref={sliderRef} {...settings}>
                         {data.map((d) => <SliderItem key={d.id} img={d.img} desc={d.desc} title={d.title} id={d.id}/>)}
-            
                     </Slider>
                 </div>
             </div>

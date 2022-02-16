@@ -16,7 +16,7 @@ const OfferItem: FunctionComponent<Props> = ({img,title, children}) => {
             <div className="overlay">
                 {children}
             </div>
-            <p className="text-center">{title}</p>
+            <h4 className="offer-title">{title}</h4>
         </div>
      );
 }

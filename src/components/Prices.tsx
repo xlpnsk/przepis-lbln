@@ -43,7 +43,7 @@ const Prices: FunctionComponent<Props> = () => {
             <h2 className="text-center">CENNIK</h2>
             <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true} duration={1}>
             <div className="prices-container">
-            {items.map((item,ind) => <CollapseItem key={ind} prop={item} id={ind} setOpen={setOpen} open={open}/>)}
+                {items.map((item,ind) => <CollapseItem key={ind} prop={item} id={ind} setOpen={setOpen} open={open}/>)}
             </div>
             </AnimationOnScroll>
         </section>

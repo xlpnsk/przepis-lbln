@@ -2,9 +2,10 @@
     content: ' ';
     display: inline-block;
     width: 100%;
-
+    padding-top: 100px;
     max-width: 1410px;
     border-top: 2px solid #dee2e6;
+
 }
 .form-container{
     display: grid;
@@ -38,16 +39,9 @@
     border: 2px solid #e5e5e5;
     border-radius: 5px;
     outline: none;
+    font-family: 'Roboto';
 }
 
-/* .btn-group{
-    max-width: 450px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 48px;
-    margin-bottom: 10px;
-} */
 
 label{
     width: 100%;
@@ -67,4 +61,83 @@ input:not(:last-child){
 
     max-width: 1410px;
     border-top: 2px solid #dee2e6;
+}
+
+.form .input:hover{
+    border-color: #86bc25;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn-submit{
+    margin-top: 48px;
+    margin-bottom: 10px;
+}
+
+.custom-label input{
+    width: 50px !important;
+    height: 50px;
+    margin-right: 10px;
+    width: fit-content;
+}
+
+.custom-label{
+    max-width: 450px;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-size: .8em;
+    color: #b6b6b6;
+    display: flex;
+    text-align: left;
+}
+
+.form-container>*{
+    padding: 0 15px;
+}
+
+.background-form-icons {
+    position: absolute;
+    z-index: -1;
+    /* top: 0; */
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background-form-icons::after{
+    background-image: url(../assets/anim/anim12.png);
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -170px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 120px;
+
+}
+
+.anim-form-1{
+    position: absolute;
+    top: -100px;
+    left: 30%;
+    transform: scale(.45);
+}
+.anim-form-2{
+    position: absolute;
+    top: 38px;
+    left: 22%;
+    transform: scale(.45);
+}
+.anim-form-3{
+    position: absolute;
+    top: 290px;
+    left: 28%;
+    transform: scale(.45);
 }
