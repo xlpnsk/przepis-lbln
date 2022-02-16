@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import '../styles/form.css'
 interface Props {
     
@@ -8,6 +9,7 @@ const ContactForm: FunctionComponent<Props> = () => {
     return ( 
         <section className="section form-section">
             <h2 className="text-center">NAPISZ DO NAS</h2>
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true} duration={1}>
             <div className="form-container">
                 <p></p>
                 <form className="form">
@@ -16,9 +18,7 @@ const ContactForm: FunctionComponent<Props> = () => {
                     <input type="text" placeholder="E-mail"/>
                     <textarea placeholder="Wiadomość"/>
                     <label htmlFor="policy"><input type="checkbox" id='policy'/>policy</label>                    
-                    <div className="btn-group">
-                        <button type='submit' className="btn">WYŚLIJ</button>
-                    </div>
+                    <button type='submit' className="btn">WYŚLIJ</button>
                 </form>
                 <div className="containt-info">
                 <p>Przepis Agnieszka Ziajko-Jankowska</p> 
@@ -34,6 +34,7 @@ const ContactForm: FunctionComponent<Props> = () => {
                 <button>a</button>
                 </div>
             </div>
+            </AnimationOnScroll>
         </section>
      );
 }

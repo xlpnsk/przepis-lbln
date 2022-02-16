@@ -124,7 +124,7 @@ const AboutUs: FunctionComponent<Props> = () => {
             </div>
             <article className="about-us-inner">
             <h2 className="about-title text-center">
-                KILKA SŁÓW O NAS
+                KILKA SŁÓW <br /> O NAS
             </h2>
             <div className="slider">
                 <div className="slider-items">

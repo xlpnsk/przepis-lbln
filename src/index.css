@@ -57,6 +57,9 @@ code {
 .text-center {
   text-align: center!important;
   font-family: 'Kulturista';
+  margin-bottom: 64px;
+  margin-top: 0;
+  line-height: 1.2;
 }
 
 h2{

@@ -1,4 +1,5 @@
 import { FunctionComponent, useState } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import CollapseItem from "./CollapseItem";
 
 export interface IPrices{
@@ -40,9 +41,11 @@ const Prices: FunctionComponent<Props> = () => {
     return ( 
         <section className="section">
             <h2 className="text-center">CENNIK</h2>
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true} duration={1}>
             <div className="prices-container">
             {items.map((item,ind) => <CollapseItem key={ind} prop={item} id={ind} setOpen={setOpen} open={open}/>)}
             </div>
+            </AnimationOnScroll>
         </section>
      );
 }
