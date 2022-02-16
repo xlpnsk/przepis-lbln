@@ -38,10 +38,9 @@
     font-family: 'Kulturista';
     font-weight: bold;
   }
-  
   .logo{
     justify-content: center;
-
+    align-items: center;
   }
   
   .nav-icons>ul{
@@ -55,6 +54,23 @@
 
   .nav-icons li{
     height: 41px;
+    position: relative;
+  }
+
+  .hover-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity .25s;
+    transition: opacity .25s;
+  }
+
+  .hover-icon:hover{
+    opacity: 1;
+  }
+
+  .hover-icon{
+    opacity: 0;
   }
 
   .nav-icons li a{

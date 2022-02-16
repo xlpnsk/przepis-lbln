@@ -12,7 +12,11 @@ const NavBar: FunctionComponent<Props> = () => {
     return (
         <section className="main-container"> 
             <MainNav>
-                <img src={Logo} alt="logo"/>
+                <div className="logo">
+                    <a href="#">
+                        <img src={Logo} alt="logo"/>
+                    </a>
+                </div>
             </MainNav>
         <div className="main-header">
             <AnimationOnScroll duration={1.3} animateIn="animate__fadeInDown" animateOnce={true}>

@@ -72,6 +72,10 @@
     border: 2px solid #86bc25;
 }
 
+.offer-item:hover .offer-title{
+    color:#86bc25;
+}
+
 .offer-item:hover .offer-img img{
     transform: scale(0.93);
 }

@@ -14,7 +14,7 @@ interface Props {
 const ContactForm: FunctionComponent<Props> = () => {
     return ( 
         <section className="section form-section">
-            <div className="background-form-icons">
+            <div className="background-form-icons tst">
                 <div className="anim-form-1">
                     <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>           
                         <img src={Anim13} alt="gr-form1" />
@@ -42,10 +42,12 @@ const ContactForm: FunctionComponent<Props> = () => {
                     <input className="input" type="text" placeholder="E-mail"/>
                     <textarea className="input" placeholder="Wiadomość" rows={5}/>
                     <div className="textarea-container">
-                    <label className="custom-label" htmlFor="policy"><input className="input" type="checkbox" id='policy'/>
+                    <label className="custom-label label-container" htmlFor="policy">
                         Zgodnie z art. 13 ust. 1 ogólnego rozporządzenia o ochronie danych 
                         osobowych z dnia 27 kwietnia 2016 r., informujemy, iż administratorem 
                         Pani/Pana danych osobowych jest "Przepis" Agnieszka Ziajko-Jankowska.
+                        <input className="input" type="checkbox" id='policy'/>
+                        <span className="checkmark"></span>
                     </label>   
                     </div>                 
                     <button type='submit' className="btn btn-submit">WYŚLIJ</button>
