@@ -110,7 +110,7 @@ textarea{
 .background-form-icons::after{
     background-image: url(../assets/anim/anim12.png);
     content: "";
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: #fff;

@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import InstaIcon from '../assets/insta_icon.svg'; 
 import FbIcon from '../assets/facebook_icon.svg'; 
 import ShoppingIcon from '../assets/shopping.svg' 
@@ -8,8 +8,22 @@ interface MainNavProps {
 }
  
 const MainNav: FunctionComponent<MainNavProps> = ({children}) => {
+
+    const [windowDimensions, setWindowDimensions] = useState(0);
+
+    const handleResize = (ev: UIEvent) => {
+        console.log('asfdsfsdfas');
+        
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return window.removeEventListener('resize', handleResize)
+    },[])
+
     return ( 
-        <nav className="main-nav container">
+        <nav className="main-nav container" >
             <div className="nav-bar-expanded">
                 <a href="#" className="nav-link">START</a>
                 <a href="#" className="nav-link">O NAS</a>
