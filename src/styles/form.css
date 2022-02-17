@@ -1,8 +1,14 @@
 .form-section{
-    position: absolute;
+    width:100%;
+    position: relative;
+    padding-bottom: 70px;
 }
 
-.form-section::before{
+.form-section-inner{
+    display: inline;
+}
+
+.form-section-inner::before{
     content: ' ';
     display: inline-block;
     width: 100%;
@@ -60,7 +66,7 @@ input:not(:last-child){
 
 
 
-.form-section::after{
+.form-section-inner::after{
     background-image: url(../assets/anim/anim12.png);
     content: "";
     background-size:contain;
@@ -211,4 +217,27 @@ textarea{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+
+  .btn-container div {
+    height: 41px;
+    position: relative;
+    margin: 0 5px;
+    margin-top: 10px;
+  }
+
+  .btn-container{
+      display: flex;
+  }
+
+
+  @media  screen and (max-width: 769px) {
+    .form-container{
+        grid-template-columns: 1fr;
+    }
+
+    .containt-info{
+        text-align: center;
+        align-items: center;
+    }
   }

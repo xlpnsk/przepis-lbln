@@ -8,6 +8,13 @@
   src: url(./assets/font/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/font/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+
 body {
   margin: 0;
     color: #000;

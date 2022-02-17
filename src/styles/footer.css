@@ -1,0 +1,15 @@
+.footer-section::before{
+    content: ' ';
+    display: inline-block;
+    width: 100%;
+    padding-top: 100px;
+    max-width: 1410px;
+    border-top: 2px solid #dee2e6;
+}
+
+.footer-section{
+    padding-top: 0;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 300;
+}

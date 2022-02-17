@@ -2,18 +2,21 @@ import { FunctionComponent } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import '../styles/form.css'
 
-import Anim12 from '../assets/anim/anim12.png';
 import Anim13 from '../assets/anim/anim13.png';
 import Anim10 from '../assets/anim/anim10.png';
 import Anim11 from '../assets/anim/anim11.png';
-
+import InstaIcon from '../assets/insta_icon.svg'; 
+import FbIcon from '../assets/facebook_icon.svg'; 
+import InstaIconHover from '../assets/insta_icon_hover.svg'; 
+import FbIconHover from '../assets/facebook_icon_hover.svg'; 
 interface Props {
     
 }
  
 const ContactForm: FunctionComponent<Props> = () => {
-    return ( 
-        <section className="section form-section">
+    return (
+         <section className="section form-section">
+        <div className="form-section-inner">
             <div className="background-form-icons tst">
                 <div className="anim-form-1">
                     <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>           
@@ -63,12 +66,23 @@ const ContactForm: FunctionComponent<Props> = () => {
                 <p>+48 662 050 683 </p>
                 <p><a>info@przepis.lublin.pl</a></p>
                 <div className="btn-container">
-                    <a>a</a>
-                    <a>a</a>
+                    <div>
+                    <a>
+                        <img src={FbIcon} alt="facebook logo"></img>
+                        <img src={FbIconHover} alt="facebook logo" className="hover-icon"></img>
+                    </a>
+                    </div>
+                    <div>
+                    <a>
+                        <img src={InstaIcon} alt="insta logo"></img>
+                        <img src={InstaIconHover} alt="insta logo" className="hover-icon"></img>
+                    </a>
+                    </div>
                 </div>
                 </div>
             </div>
             </AnimationOnScroll>
+        </div>
         </section>
      );
 }

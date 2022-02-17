@@ -9,14 +9,11 @@ import Burger from '../assets/burger.svg'
 import ShoppingIconHover from '../assets/shopping_hover.svg'; 
 
 interface ScrollNavProps {
-    
+    width: number,
+    setClicked: React.Dispatch<React.SetStateAction<boolean>>
 }
  
-const ScrollNav: FunctionComponent<ScrollNavProps> = () => {
-
-    const [sideExpanded, setSideExpanded] = useState(false);
-
-    const width = useWidth();
+const ScrollNav: FunctionComponent<ScrollNavProps> = ({width, setClicked}) => {
 
     const navRef = useRef<HTMLDivElement>(null);
 
@@ -49,7 +46,7 @@ const ScrollNav: FunctionComponent<ScrollNavProps> = () => {
                             <img src={Shopping} alt="shopping" />
                             <img src={ShoppingIconHover} alt="facebook logo" className="hover-icon"></img>
                         </span>
-                        <span className="burder-btn mobile-btn" onClick={() => setSideExpanded((prev) => !prev)}>
+                        <span className="burder-btn mobile-btn" onClick={() => setClicked((prev) => !prev)}>
                             <img src={Burger} alt="burger menu" style={{width: '2.25rem', height: '2.25rem'}}/>
                         </span>
                     </div>

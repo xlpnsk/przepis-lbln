@@ -5,9 +5,6 @@
     margin-right: auto;
 }
 
-.slider{
-    
-}
 .slider-item{
     max-width: 930px; /**/
     display: flex;
@@ -33,8 +30,6 @@
 }
 
 .about-us-container{
-    /* background: url('../assets/background.png') no-repeat center;
-    background-size: cover; */
     position: relative;
 }
 
@@ -116,7 +111,7 @@
     font-size: 30px;
     position: absolute;
     top: 400px;
-    right: 190px;
+    right: 90px;
 }
 
 .btn-slick-next::before{
@@ -131,7 +126,7 @@
     font-size: 30px;
     position: absolute;
     top: 400px;
-    left: 190px;
+    left: 90px;
 }
 
 .btn-slick-prev::before{
@@ -168,15 +163,67 @@
     text-transform: uppercase;
     font-family: 'Kulturista';
 }
+.slider-title,.slider-desc{
+    margin: 0 -200px;
+    margin-top: 20px;
+}
 
-/* .dots{
-    list-style: none;
-    background-color: #86bc25;
-} */
 
-
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 950px) {
     .slide-round-btn{
         display: none;
+    }
+    .slider-title,.slider-desc{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.slic-active{
+    background-color: #86bc25 !important;
+}
+
+.slick-dots li.slick-active button:before{
+    color:#86bc25 !important;
+}
+
+.slick-slider .slick-dots li button:before{
+    font-size: 13px !important;
+}
+.slick-slide .slider-img{
+    transition: all .3s ease;
+}
+.slick-slide:not(.slick-center) .slider-img{
+    transform: scale(0.6);
+    border-color: #fff;
+    opacity: 0.9;
+    filter: blur(3px);
+}
+
+.slick-slide:not(.slick-center) .slider-title {
+    opacity: 0;
+}
+.slick-slide:not(.slick-center) .slider-desc {
+    opacity: 0;
+}
+.slick-slide .slider-title {
+    transition: opacity .3s ease;
+}
+.slick-slide .slider-desc {
+    transition: opacity .3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+    .slick-slide{
+        transition: all .3s ease;
+    }
+
+    .slick-slide:not(.slick-center){
+        opacity: 0;
     }
 }

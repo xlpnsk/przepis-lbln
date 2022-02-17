@@ -1,4 +1,4 @@
-import { FunctionComponent, useRef, useState } from "react";
+import { FunctionComponent, ReactChild, ReactFragment, ReactPortal, useRef, useState } from "react";
 import PrzepisONas1 from '../assets/onas_foto/Przepis_onas_1.png';
 import PrzepisONas2 from '../assets/onas_foto/Przepis_onas_2.png';
 import PrzepisONas3 from '../assets/onas_foto/Przepis_onas_3.png';
@@ -19,6 +19,7 @@ import Anim7 from '../assets/anim/anim7.png';
 import Anim8 from '../assets/anim/anim8.png';
 import Anim9 from '../assets/anim/anim9.png';
 import Arrow from '../assets/arrow.svg';
+import useWidth from "../hooks/useWidth";
 interface Props {
     
 }
@@ -63,7 +64,7 @@ const slideData:AboutUs[] = [{
 {
     id: 6,
     img: PrzepisONas6,
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non excepturi ex ut illum sunt. At dolorem officiis sint tempore, accusamus obcaecati eius maiores? Expedita quis nam aperiam unde, sapiente ducimus!",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non excepturi ex ut illum sunt. At dolorem officiis sint tempore, accusamus obcaecati eius maiores? Expedita quis nam aperiam unde, sapiente ducimus!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non excepturi ex ut illum sunt. At dolorem officiis sint tempore, accusamus obcaecati eius maiores? Expedita quis nam aperiam unde, sapiente ducimus",
     title: 'Jan Nowak 6'
 }];
 
@@ -73,7 +74,7 @@ const slideData:AboutUs[] = [{
 const AboutUs: FunctionComponent<Props> = () => {
 
     const [data, setData]=useState(slideData);
-
+    const width = useWidth();
     const sliderRef = useRef<Slider>(null);
 
     const settings = {
@@ -82,11 +83,11 @@ const AboutUs: FunctionComponent<Props> = () => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "0px",
+        centerPadding: '0px', //width>1400? '110px' : '0px',
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: width>1200? 3 : 1,
         slidesToScroll: 1,
-        // dotsClass: 'dots'
+        appendDots: (dots: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined) => <span>{dots}</span>
       };
 
       function ArrNext() {

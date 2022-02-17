@@ -7,7 +7,7 @@ const SliderItem: FunctionComponent<AboutUs> = ({img, desc, title}) => {
             <div className="slider-img">
                 <img src={img} alt={title}/>
             </div>
-            <p>{desc}</p>
+            <p className="slider-desc">{desc}</p>
             <h3 className="slider-title">{title}</h3>
         </div>
      );

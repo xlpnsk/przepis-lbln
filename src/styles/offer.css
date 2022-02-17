@@ -115,3 +115,9 @@
     font-family: 'Kulturista';
     margin-bottom: 8px;
 }
+
+@media screen and (max-width: 767px) {
+    .diets-list{
+        flex-direction: column;
+    }
+}
