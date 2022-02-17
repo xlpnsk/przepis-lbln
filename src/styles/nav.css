@@ -137,3 +137,15 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .title{
+      font-size: 30px;
+      margin-top: 70px;
+    }
+
+    .main-title{
+      font-size: 14px;
+    }
+
+  }
