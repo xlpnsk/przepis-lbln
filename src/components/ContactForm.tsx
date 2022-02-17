@@ -64,7 +64,8 @@ const ContactForm: FunctionComponent<Props> = () => {
                 <p>91 1140 2004 0000 3102 7592 9532 </p>
                 <br />
                 <p>+48 662 050 683 </p>
-                <p><a>info@przepis.lublin.pl</a></p>
+                <p><a href="#" className="link">info@przepis.lublin.pl</a></p>
+                <br />
                 <div className="btn-container">
                     <div>
                     <a>

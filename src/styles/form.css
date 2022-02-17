@@ -27,6 +27,8 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    padding-left: 40px !important;
+    line-height: 1.4;
 }
 
 .containt-info p{
@@ -52,6 +54,7 @@
     outline: none;
     font-family: 'Roboto';
     transition: all .3s ease;
+    font-size: 16px;
 }
 
 
@@ -69,7 +72,7 @@ input:not(:last-child){
 .form-section-inner::after{
     background-image: url(../assets/anim/anim12.png);
     content: "";
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: #fff;
@@ -91,7 +94,7 @@ textarea{
 }
 
 .btn-submit{
-    margin-top: 48px;
+    margin-top: 36px;
     margin-bottom: 10px;
 }
 
@@ -103,7 +106,6 @@ textarea{
 }
 
 .custom-label{
-    /* max-width: 450px; */
     position: relative;
     cursor: pointer;
     padding: 0;
@@ -128,21 +130,21 @@ textarea{
 
 .anim-form-1{
     position: absolute;
-    top: -100px;
-    left: 30%;
-    transform: scale(.45);
+    top: -115px;
+    left: 23%;
+    transform: scale(.5);
 }
 .anim-form-2{
     position: absolute;
-    top: 38px;
-    left: 22%;
-    transform: scale(.45);
+    top: 40px;
+    left: 14%;
+    transform: scale(.5);
 }
 .anim-form-3{
     position: absolute;
-    top: 290px;
-    left: 28%;
-    transform: scale(.45);
+    top: 310px;
+    left: 21%;
+    transform: scale(.5);
 }
 
 
@@ -159,24 +161,24 @@ textarea{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
   
   /* Hide the browser's default checkbox */
-  .label-container input {
+.label-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
+}
+
   /* On mouse-over, add a grey background color */
-  .label-container:hover input ~ .checkmark {
+.label-container:hover input ~ .checkmark {
     border-color: #86bc25;
-  }
+}
 
   /* Create a custom checkbox */
-  .checkmark {
+.checkmark {
     position: absolute;
     top: 5px;
     left: 0;
@@ -186,28 +188,28 @@ textarea{
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     transition: all .3s ease;
-  }
+}
   
   /* When the checkbox is checked, add a blue background */
-  .label-container input:checked ~ .checkmark {
+.label-container input:checked ~ .checkmark {
     background-color: #86bc25;
     border: 2px solid #86bc25;
-  }
+}
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
+}
   
   /* Show the checkmark when checked */
-  .label-container input:checked ~ .checkmark:after {
+.label-container input:checked ~ .checkmark:after {
     display: block;
-  }
+}
   
   /* Style the checkmark/indicator */
-  .label-container .checkmark:after {
+.label-container .checkmark:after {
     left: 6px;
     top: 2px;
     width: 5px;
@@ -217,18 +219,18 @@ textarea{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
-  .btn-container div {
+.btn-container div {
     height: 41px;
     position: relative;
     margin: 0 5px;
     margin-top: 10px;
-  }
+}
 
-  .btn-container{
+.btn-container{
       display: flex;
-  }
+}
 
 
   @media  screen and (max-width: 769px) {
@@ -236,8 +238,11 @@ textarea{
         grid-template-columns: 1fr;
     }
 
+
     .containt-info{
+        padding-top: 30px;
         text-align: center;
         align-items: center;
+        padding-left: 15px !important;
     }
   }

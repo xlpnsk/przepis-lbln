@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from "react";
+import { FunctionComponent } from "react";
 import InstaIcon from '../assets/insta_icon.svg'; 
 import FbIcon from '../assets/facebook_icon.svg'; 
 import ShoppingIcon from '../assets/shopping.svg'; 

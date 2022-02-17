@@ -2,7 +2,6 @@
     content: ' ';
     display: inline-block;
     width: 100%;
-    /* width: 1410px; */
     max-width: 1410px;
     border-top: 2px solid #dee2e6;
 }
@@ -36,7 +35,6 @@
 }
 
 .collapse-table{
-    /* margin: auto; */
     width: 100%;
     margin-bottom: 30px;
 }
@@ -107,6 +105,7 @@ table {
     transition: color 300ms ease;
     font-family: 'Kulturista';
     font-weight: bold;
+    cursor: pointer;
 }
 
 .title-active{
@@ -124,22 +123,22 @@ table {
 
 
 
-  .collapse-enter {
+.collapse-enter {
     transform: translateY(50%);
-  }
-  .collapse-enter-active {
+}
+.collapse-enter-active {
     transform: translateY(0);
     transition: all 300ms ease;
-  }
-  .collapse-exit {
+}
+.collapse-exit {
     transform: translateY(0);
-  }
-  .collapse-exit-active {
+}
+.collapse-exit-active {
     transform: translateY(70%);
     transition: all 300ms ease;
-  }
+}
 
 
-  .collapse-header .round-btn{
+.collapse-header .round-btn{
       padding-top: 3px;
-  }
+}

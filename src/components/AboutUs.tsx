@@ -18,7 +18,6 @@ import Anim6 from '../assets/anim/anim6.png';
 import Anim7 from '../assets/anim/anim7.png';
 import Anim8 from '../assets/anim/anim8.png';
 import Anim9 from '../assets/anim/anim9.png';
-import Arrow from '../assets/arrow.svg';
 import useWidth from "../hooks/useWidth";
 interface Props {
     
@@ -83,7 +82,7 @@ const AboutUs: FunctionComponent<Props> = () => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: '0px', //width>1400? '110px' : '0px',
+        centerPadding: '110px', //width>1400? '110px' : '0px',
         speed: 500,
         slidesToShow: width>1200? 3 : 1,
         slidesToScroll: 1,
@@ -118,63 +117,63 @@ const AboutUs: FunctionComponent<Props> = () => {
            <div className="anim-1">
            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-                <img src={Anim1} alt="icon1" />
+                <img src={Anim1} alt="background icon" />
 
             </AnimationOnScroll>
             </div>
            <div className="anim-2">
            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-                <img src={Anim2} alt="gr6" />
+                <img src={Anim2} alt="background icon" />
 
             </AnimationOnScroll>
             </div>
            <div className="anim-3">
            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-                <img src={Anim3} alt="gr6" />
+                <img src={Anim3} alt="background icon" />
 
             </AnimationOnScroll>
             </div>
            <div className="anim-4">
            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-                <img src={Anim4} alt="gr6" />
+                <img src={Anim4} alt="background icon" />
 
             </AnimationOnScroll>
             </div>
            <div className="anim-5">
            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-                <img src={Anim5} alt="gr6" />
+                <img src={Anim5} alt="background icon" />
 
             </AnimationOnScroll>
             </div>
            <div className="anim-6">
            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-                <img src={Anim6} alt="gr6" />
+                <img src={Anim6} alt="background icon" />
 
             </AnimationOnScroll>
             </div>
             <div className="anim-7">
             <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-              <img src={Anim7} alt="gr7" />
+              <img src={Anim7} alt="background icon" />
 
           </AnimationOnScroll>
             </div>
             <div className="anim-8">
             <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-              <img src={Anim8} alt="gr8" />
+              <img src={Anim8} alt="background icon" />
 
           </AnimationOnScroll>
             </div>
             <div className="anim-9">
             <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
               
-              <img src={Anim9} alt="gr9" />
+              <img src={Anim9} alt="background icon" />
 
           </AnimationOnScroll>
             </div>

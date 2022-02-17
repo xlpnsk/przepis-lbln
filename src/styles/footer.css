@@ -12,4 +12,19 @@
     text-align: left;
     font-size: 0.8rem;
     font-weight: 300;
+    color: #b6b6b6;
+}
+
+.link{
+    color: #86bc25;
+    text-decoration: none;
+}
+
+.footer-inner{
+    margin: auto;
+    max-width: max-content;
+}
+
+.footer-inner p:first-child{
+    font-size: 14px;
 }

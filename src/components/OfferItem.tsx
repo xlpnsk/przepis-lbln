@@ -1,4 +1,4 @@
-import { Children, FunctionComponent, useEffect, useRef, useState } from "react";
+import { FunctionComponent } from "react";
 
 interface Props {
     img:string,

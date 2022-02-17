@@ -6,7 +6,7 @@
 }
 
 .slider-item{
-    max-width: 930px; /**/
+    max-width: 930px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,50 +58,50 @@
 
 .anim-1{
     position: absolute;
-    top: -100px;
-    left: 55%;
+    top: -150px;
+    left: 54%;
 }
 .anim-2{
     position: absolute;
-    top: 120px;
-    left: 43%;
+    top: 130px;
+    left: 40%;
 }
 .anim-3{
     position: absolute;
-    top: 290px;
-    left: 31%;
+    top: 360px;
+    left: 23%;
 }
 .anim-4{
     position: absolute;
-    top: 530px;
-    left: 26%;
+    top: 570px;
+    left: 15%;
 }
 .anim-5{
     position: absolute;
-    top: 700px;
-    left: 31%;
+    top: 745px;
+    left: 23%;
 }
 .anim-6{
     position: absolute;
-    top: 550px;
-    left: 54%;
+    top: 580px;
+    left: 53%;
 }
 .anim-7{
     position: absolute;
-    top: 520px;
-    right: 22%;
+    top: 550px;
+    right: 14%;
 }
 
 .anim-8{
     position: absolute;
-    bottom: -100px;
-    right: 31%;
+    bottom: -130px;
+    right: 27%;
 }
 
 .anim-9{
     position: absolute;
-    bottom: 380px;
-    right: 20%;
+    bottom: 350px;
+    right: 9%;
 }
 
 .btn-slick-next{
@@ -162,10 +162,12 @@
     color:#86bc25;
     text-transform: uppercase;
     font-family: 'Kulturista';
+    font-size: 14px;
+    margin-top: 10px;
 }
 .slider-title,.slider-desc{
     margin: 0 -200px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -218,6 +220,11 @@
     transition: opacity .3s ease;
 }
 
+.slick-slide:not(.slick-active) .slider-img{
+    opacity: 0;
+}
+
+
 @media screen and (max-width: 1200px) {
     .slick-slide{
         transition: all .3s ease;
@@ -226,4 +233,12 @@
     .slick-slide:not(.slick-center){
         opacity: 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .anim-1,.anim-2,.anim-3,.anim-4,.anim-5,.anim-6,.anim-7,.anim-8,.anim-9{
+        opacity: 0;
+    }
+    
 }

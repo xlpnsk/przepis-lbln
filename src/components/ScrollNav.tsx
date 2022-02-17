@@ -1,9 +1,7 @@
 import { FunctionComponent, useEffect, useRef, useState } from "react";
 import '../styles/scroll-nav.css';
 import MainNav from "./MainNav";
-import NavBar from "./NavBar";
 import MiniLogo from '../assets/logo_small.svg';
-import useWidth from "../hooks/useWidth";
 import Shopping from '../assets/shopping.svg'
 import Burger from '../assets/burger.svg'
 import ShoppingIconHover from '../assets/shopping_hover.svg'; 

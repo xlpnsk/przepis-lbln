@@ -48,3 +48,34 @@
     padding: 10px 20px;
     text-align: left;
 }
+
+.close-btn{
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.close-btn:hover{
+    background-color: #e5e5e5;
+}
+
+.side-menu-enter {
+    transform: translateX(100%);
+  }
+  .side-menu-enter-active {
+    transform: translateX(0%);
+    transition: all .6s ease;
+  }
+  .side-menu-exit {
+    transform: translateX(0%);
+  }
+  .side-menu-exit-active {
+    transform: translateX(100%);
+    transition: all .6s ease;
+  }

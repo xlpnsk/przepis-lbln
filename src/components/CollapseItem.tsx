@@ -1,9 +1,7 @@
 import React, { FunctionComponent, useRef, useState } from "react";
 import { IPrices } from "./Prices";
 import '../styles/collapse.css';
-import Plus from '../assets/Component 18 – 11.svg'
 import { CSSTransition } from 'react-transition-group'
-import { JsxElement } from "typescript";
 interface Props {
     open: boolean[],
     id:number,
@@ -32,9 +30,9 @@ const CollapseItem: FunctionComponent<Props> = ({prop, open, setOpen, id}) => {
     return (
         <div className="collapse-container">
  
-        <div className="collapse-header">
+        <div className="collapse-header" onClick={() => clickHandler()}>
             <div className={`main-title${open[id]?' title-active':''}`}>{prop.title}</div>
-            <span className={`round-btn${open[id]?' btn-active':''}`} onClick={() => clickHandler()}>{open[id]? '-' : '+'}</span>
+            <span className={`round-btn${open[id]?' btn-active':''}`}>{open[id]? '-' : '+'}</span>
         </div>
         <div className="collapse-outer-container" style={open[id]?{ height: menuHeight }:{ height: 0 }}>
         <CSSTransition 

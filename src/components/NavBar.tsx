@@ -25,8 +25,12 @@ const NavBar: FunctionComponent<Props> = () => {
                 <br />
                 SPECJALNIE DLA CIEBIE
             </div>
-            <p className="subtitle">Przepis jest firmą cateringową, która zrodziła się z pasji do gotowania, smaku i zdrowego jedzenia.</p>
-            <a className="btn">ZOBACZ OFERTĘ</a>
+            <div className="subtitle">
+                <p>Przepis jest firmą cateringową, która zrodziła się z pasji do gotowania, smaku i zdrowego jedzenia.</p>
+            </div>
+            <div className="btn-main">
+                <a className="btn">ZOBACZ OFERTĘ</a>
+            </div>           
             </AnimationOnScroll>
         </div>    
         </section>

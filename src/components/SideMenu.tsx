@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-
+import CloseIcon from '../assets/close_icon.svg';
 interface SideMenuProps {
     setClicked: React.Dispatch<React.SetStateAction<boolean>>
 }
@@ -9,7 +9,9 @@ const SideMenu: FunctionComponent<SideMenuProps> = ({setClicked}) => {
         <aside className="side-menu-container">
             <header className="side-menu-header">
                 <h2 className="side-menu-text">MENU</h2>
-                <span className="btn" onClick={() => setClicked((prev) => !prev)}>X</span>
+                <span className="close-btn" onClick={() => setClicked((prev) => !prev)}>
+                    <img src={CloseIcon} alt="close icon" />
+                </span>
             </header>
             <div className="side-menu-content">
                 <ul>
