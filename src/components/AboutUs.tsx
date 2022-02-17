@@ -82,7 +82,7 @@ const AboutUs: FunctionComponent<Props> = () => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: '110px', //width>1400? '110px' : '0px',
+        centerPadding: width>1400? '110px' : '0px',
         speed: 500,
         slidesToShow: width>1200? 3 : 1,
         slidesToScroll: 1,
